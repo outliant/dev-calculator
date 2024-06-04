@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>QA Calculator</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <link rel="stylesheet" href="./style.css">
+    <link rel="icon" href="./favicon.ico" type="image/x-icon">
+    <link href="https://fonts.cdnfonts.com/css/aktiv-grotesk-cd-trial?styles=132713,132715,132718" rel="stylesheet">
+  </head>
+
+  <body>
+    <main class="main-wrapper">
+      <h1>QA Calculator</h1>
+
+      <div class="wrapper-row">
+
+        <div class="wrapper-col input-style">
+          <label class="input-labels label-style" for="numPages">Number of Pages:</label>
+          <input id="numPages" name="numPages" type="number" placeholder="1" min="1">
+        </div>
+
+        <div class="wrapper-col input-style">
+          <label class="input-labels label-style" for="numMonths">Number of Months:</label>
+          <input id="numMonths" name="numMonths" type="number" placeholder="1" min="1">
+        </div>
+
+        <div class="wrapper-col input-style">
+          <label class="input-labels label-style" for="techstack">QA Level: </label>
+  
+          <select name="techstack" id="qaLevelSelect">
+            <option value="Junior QA">Junior QA</option>
+            <option value="Mid-Level QA">Mid-Level QA</option>
+            <option value="Senior QA">Senior QA</option>
+          </select>
+        </div>
+
+        <div class="wrapper-col input-style">
+          <label class="input-labels label-style" for="techstack">Complexity Level: </label>
+  
+          <select name="techstack" id="complexityLevelSelect">
+            <option value="Mild Complexity">Mild Complexity</option>
+            <option value="Moderate Complexity">Moderate Complexity</option>
+            <option value="High Complexity">High Complexity</option>
+          </select>
+        </div>
+      </div>
+      
+
+      
+      <div class="wrapper-col center computation-wrapper-style">
+        <h3>Number of QAs Needed:</h3>
+        <span id="numQAsNeeded">0</span>
+      </div>
+    </main>
+  
+	  <script src="./qaCalculator.js"></script>
+  </body>
+  
+</html>

@@ -1,0 +1,110 @@
+
+body {
+  max-width: 1440px;
+  margin: 0 auto;
+  display:flex; 
+  flex-direction:column; 
+  justify-content:center;
+  min-height: 100vh;  
+}
+::placeholder {
+  color: #a4a4a4;
+}
+.main-wrapper {
+  padding: 80px;
+  margin: 40px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 40px;
+  font-family: 'Aktiv Grotesk Ex Trial', sans-serif;
+  box-shadow: 1px 3px 17px 1px rgba(125,125,125,0.51);
+  -webkit-box-shadow: 1px 3px 17px 1px rgba(125,125,125,0.51);
+  -moz-box-shadow: 1px 3px 17px 1px rgba(125,125,125,0.51);
+  border-radius: 30px;
+}
+.wrapper-row {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  width: 100%;
+}
+.wrapper-row.dev-calc {
+  grid-template-columns: 1fr 1fr 1fr;
+}
+.wrapper-col {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+}
+.wrapper-col.center {
+  align-items: center;
+  justify-content: center;
+  width: fit-content;
+}
+.label-style {
+  position: absolute;
+  top: -11px;
+  padding: 0px 10px;
+  background-color: white;
+  white-space: nowrap;
+  font-weight: 600;
+  text-align: center;
+}
+.input-style {
+  padding: 40px;
+  border: 1px solid #212228;
+  border-radius: 30px;
+  position: relative;
+}
+.computation-wrapper-style {
+  padding: 38px;
+  border-radius: 30px;
+  background-color: #E2FF59;
+  border: 1px solid #212228;
+  position: relative;
+  text-align: center;
+}
+input, select {
+  font-family: 'Aktiv Grotesk Ex Trial', sans-serif;
+  border: none;
+  border-bottom: 1px solid #212228;
+  background-color: transparent;
+  padding: 10px 20px;
+}
+select {
+  cursor: pointer;
+}
+input:focus-visible, select:focus-visible {
+  outline: none;
+  border-bottom: 1.5px solid #212228;
+}
+
+@media only screen and (max-width: 1200px) {
+  .main-wrapper {
+    gap: 20px;
+  }
+  .wrapper-row,  .wrapper-row.dev-calc{
+    grid-template-columns: 1fr;
+    justify-items: center;
+  }
+  .wrapper-col, .wrapper-col.center {
+    width: 80%;
+  }
+}
+
+@media only screen and (max-width: 768px) {
+  .main-wrapper {
+    padding: 40px;
+    margin: 20px;
+  }
+  .wrapper-col, .wrapper-col.center {
+    align-items: center;
+  }
+  input, select {
+    width: 100%;
+  }
+  .computation-wrapper-style, .input-style {
+    border-radius: 15px;
+  }
+}
