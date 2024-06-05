@@ -14,15 +14,15 @@ function qaType(type, complexityLvl, numPages, numMonths) {
   var pgCount;
   switch (type) {
     case "Junior QA":
-      pgCount = getPagesByComplexity(complexityLvl, 8, 24);
+      pgCount = getPagesByComplexity(complexityLvl, 4, 12);
       getNumOfQA(pgCount, numPages, numMonths);
       break;
     case "Mid-Level QA":
-      pgCount = getPagesByComplexity(complexityLvl, 20, 40);
+      pgCount = getPagesByComplexity(complexityLvl, 10, 20);
       getNumOfQA(pgCount, numPages, numMonths);
       break;
     case "Senior QA":
-      pgCount = getPagesByComplexity(complexityLvl, 40, 60);
+      pgCount = getPagesByComplexity(complexityLvl, 20, 28);
       getNumOfQA(pgCount, numPages, numMonths);
       break;
     default:
